@@ -11,7 +11,7 @@ const App = () => {
 
   const navigate = useNavigate()
 
-    useEffect(()=>{
+   /* useEffect(()=>{
       onAuthStateChanged(auth, async(user)=>{
         if(user){
           console.log("logged in");
@@ -23,7 +23,7 @@ const App = () => {
           navigate("/login")
         }
       })
-    }, [])
+    }, [])*/
 
   return (
     <div>
@@ -38,7 +38,7 @@ const App = () => {
       />
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/login' element={<Login/>} />
+      /*  <Route path='/login' element={<Login/>} />*/
         <Route path='/player/:id' element={<Player/>}/>
         <Route path='/' element={<Home/>} />
       </Routes>
